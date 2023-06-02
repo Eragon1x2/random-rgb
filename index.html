@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random  rgb</title>
+    <script type="module" src="./index.js"></script>
+    
+</head>
+<style>
+    .gg {
+        position: relative;
+        max-width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        box-shadow: 0 0 20px #3d3d3d;
+        text-align: center;
+    }
+    .gg p {
+        max-width: 350px;
+        font-weight: 700;
+        font-size: 20px;
+        position: absolute;
+        bottom: 0;
+        left: calc(100% - 350px);
+        right: calc(100% - 350px);
+    }
+    body {
+        text-align: center;
+    }
+    button {
+        width: 100px;
+        height: 50px;
+        margin-top: 20px;
+        background-color: aqua;
+        border-radius: 10px;
+    }
+    button:hover {
+        transform: scale(1.15);
+        background-color: red;
+        transition: background-color 500ms linear, transform 500ms ease-in-out 500ms;
+    }
+</style>
+<body>
+    <div class="gg">
+    <p>click me to copy the color to clipboard</p>
+    </div>
+    <button id="button">Random rgb</button>
+</body>
+</html>
